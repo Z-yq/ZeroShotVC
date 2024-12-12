@@ -1,0 +1,6 @@
+librosa
+torch
+torchaudio
+onnxruntime
+soundfile
+modelscope
