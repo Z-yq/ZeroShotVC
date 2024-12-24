@@ -39,10 +39,10 @@ class VC_Converter():
 if __name__=="__main__":
     import argparse
     parse = argparse.ArgumentParser()
-    parse.add_argument("--source_wav", type=str,require=True)
-    parse.add_argument("--target_wav", type=str, require=True)
-    parse.add_argument("--save_path", type=str, require=True)
-    parse.add_argument("--model_path", type=str, require=True)
+    parse.add_argument("--source_wav", type=str,required=True)
+    parse.add_argument("--target_wav", type=str, required=True)
+    parse.add_argument("--save_path", type=str, required=True)
+    parse.add_argument("--model_path", type=str, required=True)
     args = parse.parse_args()
   
     vc=VC_Converter(args.model_path)
